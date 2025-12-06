@@ -1,0 +1,323 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap");
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: clip;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+
+/* Chair sofa light */
+
+
+.main-section {
+    display: grid;
+    max-width: 1920px;
+    grid-template-columns: repeat(3);
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    gap: 36px;
+    margin-top: 82px;
+}
+
+.light-section,
+.sofa-section,
+.chair-section {
+    position: relative;
+    background-color: #F7F7F7;
+    max-width: 321px;
+    min-height: 584px;
+    display: grid;
+    align-items: end;
+    align-content: end;
+    padding-left: 32px;
+    padding-right: 50px;
+}
+
+.light-section__link,
+.sofa-section__link,
+.chair-section__link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+    color: #7E7F7C;
+    margin-top: 38px;
+    padding-bottom: 64px;
+}
+
+.light-section__link::after,
+.sofa-section__link::after,
+.chair-section__link::after {
+    content: url('/img/Homepage/Homepage/Vector.svg');
+    margin-left: 9.6px;
+}
+
+
+
+
+.light-section__title,
+.sofa-section__title,
+.chair-section__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.light-section__text,
+.sofa-section__text,
+.chair-section__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+    color: #7E7F7C;
+
+}
+
+.light-section__image {
+    position: absolute;
+    top: 0;
+    left: 23%;
+}
+
+.light-section__image:last-of-type {
+    left: 50%;
+}
+
+.sofa-section {
+    background-color: #E6EFEA;
+    align-items: center;
+    align-content: start;
+    justify-items: center;
+    justify-content: center;
+    max-width: 678px;
+    padding: 0;
+    padding-top: 48px;
+}
+
+.sofa-section__text {
+    padding: 0 184px;
+    text-align: center;
+}
+
+.sofa-section__image {
+    position: absolute;
+    bottom: 5%;
+
+}
+
+.sofa-section__link {
+    margin-top: 18px;
+}
+
+
+
+
+.chair-section {
+    position: relative;
+    padding: 0;
+    justify-items: start;
+    padding-left: 36px;
+    align-content: start;
+    padding-right: 46px;
+
+}
+
+.chair-section__title {
+    padding-top: 48px;
+}
+
+.chair-section__image {
+    position: absolute;
+    left: 19%;
+}
+
+/* LOGO */
+.creator-section {
+    margin-top: 82px;
+}
+
+.creator-section__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 72px;
+}
+
+.creator-section__items {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(170px, 1fr));
+    justify-items: center;
+    align-items: center;
+    row-gap: 74.4px;
+    column-gap: 68px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* PRODUCTS SECTION */
+.container__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 82px;
+}
+
+.menu__list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 48px;
+}
+
+.menu__item {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 72px;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;
+    cursor: pointer;
+}
+
+.container__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(440px, 1fr));
+    justify-content: center;
+    gap: 36px 36px;
+    row-gap: 72px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container__item {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 0;
+    min-height: 694px;
+}
+
+.container__item>*+* {
+    margin-top: 12px;
+}
+
+.container__item>img:first-child {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.container__item:nth-child(n + 4) {
+    margin-top: 0;
+}
+
+.item__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item__price {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+}
+
+/* WHY CHOOSE US */
+.choose__title {
+    color: #2f302c;
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    margin-top: 164px;
+}
+
+.section {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 348px);
+    justify-content: center;
+    gap: 68px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__content {
+    display: grid;
+    justify-items: center;
+    gap: 24px;
+}
+
+.section__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+.section__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer__title {
+    font-family: 'BBH Sans Bartle', sans-serif;
+    font-size: 23px;
+}
+
+.footer__container {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    height: 30px;
+}
