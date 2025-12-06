@@ -63,7 +63,7 @@
 .light-section__link::after,
 .sofa-section__link::after,
 .chair-section__link::after {
-    content: url('vector.svg');
+    content: url('vector.png');
     margin-left: 9.6px;
 }
 
